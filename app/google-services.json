@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "1021601675472",
+    "firebase_url": "https://chatapp-ad590.firebaseio.com",
+    "project_id": "chatapp-ad590",
+    "storage_bucket": "chatapp-ad590.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021601675472:android:20d7582e9090f9b3bbc6d5",
+        "android_client_info": {
+          "package_name": "com.shadow.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021601675472-vmu5m298aq6k7dh15mefhb7u93rkkp5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shadow.chatapp",
+            "certificate_hash": "5f8b22c49413ce83bfebbc4a2307c8a9080c385d"
+          }
+        },
+        {
+          "client_id": "1021601675472-m853v3a3enibm2fgqi4dqnood4iv3d99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ-AfdP4aTj0zAtGG3zZamhFU1hmRuj3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021601675472-m853v3a3enibm2fgqi4dqnood4iv3d99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021601675472:android:e9a839de439ccda1bbc6d5",
+        "android_client_info": {
+          "package_name": "com.students.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021601675472-m853v3a3enibm2fgqi4dqnood4iv3d99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ-AfdP4aTj0zAtGG3zZamhFU1hmRuj3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021601675472-m853v3a3enibm2fgqi4dqnood4iv3d99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
