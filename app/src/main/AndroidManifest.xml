@@ -12,13 +12,19 @@
         android:theme="@style/Theme.ChatApp"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.RegisterActivity"
+            android:theme="@style/Theme.ChatApp.NoActionBar" />
+        <activity
+            android:name=".ui.LoginActivity"
             android:theme="@style/Theme.ChatApp.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:theme="@style/Theme.ChatApp.NoActionBar" />
     </application>
 
 </manifest>

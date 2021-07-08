@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_widget_inset">24dp</dimen>
+    <dimen name="std_widget_inset">16dp</dimen>
+    <dimen name="sm_widget_inset">8dp</dimen>
+    <dimen name="xs_widget_inset">8dp</dimen>
+</resources>
