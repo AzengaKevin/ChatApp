@@ -1,19 +1,26 @@
 package com.students.chatapp.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
+import com.google.firebase.auth.FirebaseAuth
 import com.students.chatapp.R
 import com.students.chatapp.databinding.ActivityMainBinding
 import com.students.chatapp.ui.fragments.chats.ChatsFragment
 import com.students.chatapp.ui.fragments.contacts.ContactsFragment
 import com.students.chatapp.ui.fragments.groups.GroupsFragment
 
-private lateinit var binding: ActivityMainBinding
-private lateinit var viewPagerAdapter: MainViewPagerAdapter
 
 class MainActivity : AppCompatActivity() {
+
+    private val firebaseAuth by lazy { FirebaseAuth.getInstance() }
+
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var viewPagerAdapter: MainViewPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,6 +74,46 @@ class MainActivity : AppCompatActivity() {
                 binding.tabs.selectTab(binding.tabs.getTabAt(position))
             }
         })
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.options_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        return when (item.itemId) {
+            R.id.find_friends_item_menu -> {
+
+                true
+            }
+
+            R.id.settings_item_menu -> {
+
+
+                true
+            }
+
+            R.id.logout_item_menu -> {
+
+                firebaseAuth.signOut()
+
+                sendToLoginActivity()
+
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    fun sendToLoginActivity() {
+
+        Intent(this, LoginActivity::class.java).apply {
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+        }.also { startActivity(it) }
+
     }
 
 }

@@ -103,7 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/xs_widget_inset"
-                    android:text="@string/dont_have_an_account_prompt"
+                    android:text="@string/do_not_have_an_account_prompt"
                     android:textAllCaps="false" />
 
             </LinearLayout>

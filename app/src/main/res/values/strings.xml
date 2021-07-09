@@ -9,5 +9,9 @@
     <string name="register_text">Register</string>
     <string name="forgot_password_prompt">Forgot Password?</string>
     <string name="already_have_account_prompt">Already Have An Account?</string>
-    <string name="dont_have_an_account_prompt">Don\'t Have An Account Yet?</string>
+    <string name="do_not_have_an_account_prompt">Don\'t Have An Account Yet?</string>
+
+    <string name="find_friends_text">Find Friends</string>
+    <string name="settings_text">Settings</string>
+    <string name="logout_text">Logout</string>
 </resources>

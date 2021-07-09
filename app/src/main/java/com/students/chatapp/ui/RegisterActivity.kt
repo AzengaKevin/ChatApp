@@ -77,7 +77,7 @@ class RegisterActivity : AppCompatActivity() {
                     .addOnFailureListener {
                         longToast(
                             it.localizedMessage
-                                ?: "Initial profile setup failed, update you profile later"
+                                ?: "Initial profile setup failed, update your profile later"
                         )
                         sendHome()
                     }
