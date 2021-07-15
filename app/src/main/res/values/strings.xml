@@ -3,6 +3,7 @@
     <string name="app_title">Chat App</string>
 
     <string name="name_text">Name</string>
+    <string name="phone_text">Phone</string>
     <string name="email_text">Email</string>
     <string name="password_text">Password</string>
     <string name="login_text">Login</string>
@@ -14,4 +15,8 @@
     <string name="find_friends_text">Find Friends</string>
     <string name="settings_text">Settings</string>
     <string name="logout_text">Logout</string>
+
+    <string name="updated_settings_text">Update Settings</string>
+
+    <string name="select_image_prompt">Tap on the Image to select a New Image</string>
 </resources>

@@ -19,4 +19,12 @@
         <item name="windowActionBar">false</item>
     </style>
 
+    <style name="ShapeAppearance.MaterialComponents.App.RoundedCorners" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Theme.ChatApp.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="Theme.ChatApp.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
 </resources>

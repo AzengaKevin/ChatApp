@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AlertDialog
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
@@ -91,15 +92,24 @@ class MainActivity : AppCompatActivity() {
 
             R.id.settings_item_menu -> {
 
+                startActivity(Intent(this, SettingsActivity::class.java))
 
                 true
             }
 
             R.id.logout_item_menu -> {
 
-                firebaseAuth.signOut()
+                AlertDialog.Builder(this)
+                    .setTitle("Sign Out Confirmation")
+                    .setMessage("Are you sure you want to sign out from the application")
+                    .setPositiveButton("Sure") { _, _ ->
+                        firebaseAuth.signOut()
+                        sendToLoginActivity()
+                    }
+                    .setNegativeButton("Nevermind") { dialog, _ -> dialog.dismiss() }
+                    .create()
+                    .show()
 
-                sendToLoginActivity()
 
                 true
             }
@@ -108,11 +118,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun sendToLoginActivity() {
+    private fun sendToLoginActivity() {
 
         Intent(this, LoginActivity::class.java).apply {
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         }.also { startActivity(it) }
+
+        finish()
 
     }
 

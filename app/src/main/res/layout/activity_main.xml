@@ -10,6 +10,7 @@
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:theme="@style/Theme.ChatApp.AppBarOverlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -18,13 +19,13 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+            app:popupTheme="@style/Theme.ChatApp.PopupOverlay" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
+            style="@style/Widget.MaterialComponents.TabLayout.Colored"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
             app:tabMode="fixed" />
 
     </com.google.android.material.appbar.AppBarLayout>

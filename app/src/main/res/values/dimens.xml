@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="btn_widget_inset">24dp</dimen>
+    <dimen name="lg_widget_inset">32dp</dimen>
     <dimen name="std_widget_inset">16dp</dimen>
     <dimen name="sm_widget_inset">8dp</dimen>
-    <dimen name="xs_widget_inset">8dp</dimen>
+    <dimen name="xs_widget_inset">4dp</dimen>
+
+    <dimen name="std_avatar_size">160dp</dimen>
 </resources>
